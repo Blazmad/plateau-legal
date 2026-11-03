@@ -1,0 +1,87 @@
+/* Couleurs de la marque Plateau (BRAND.md) : mode clair seulement, comme l'app. */
+:root {
+  --brume: #F3F5F9;
+  --blanc: #FFFFFF;
+  --encre: #1A1D24;
+  --marine: #1F3460;
+  --gris: #636B7C;
+  --trait: #DDE2EB;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--brume);
+  color: var(--encre);
+  font: 17px/1.6 "Instrument Sans", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 5rem;
+}
+
+.logo { display: inline-block; line-height: 0; }
+.logo img { height: 40px; width: auto; }
+
+h1 {
+  font-weight: 600;
+  font-size: clamp(1.9rem, 6vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 2rem 0 0.4rem;
+}
+
+.meta { color: var(--gris); margin: 0 0 2rem; font-size: 0.95rem; }
+
+h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 2.75rem 0 0.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--trait);
+}
+
+p, li { color: var(--encre); }
+ul { padding-left: 1.2rem; }
+li { margin: 0.35rem 0; }
+
+a { color: var(--marine); text-underline-offset: 3px; }
+
+.carte {
+  background: var(--blanc);
+  border-radius: 12px;
+  padding: 1.2rem 1.35rem;
+  margin: 0 0 1rem;
+}
+.carte p { margin: 0.4rem 0; }
+.carte strong { font-weight: 600; }
+
+.table-wrap { overflow-x: auto; margin: 1rem 0; }
+table { width: 100%; border-collapse: collapse; font-size: 0.93rem; min-width: 30rem; background: var(--blanc); border-radius: 12px; }
+th, td { text-align: left; vertical-align: top; padding: 0.7rem 0.85rem; border-bottom: 1px solid var(--trait); }
+tr:last-child td { border-bottom: 0; }
+th { color: var(--gris); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.gris { color: var(--gris); }
+
+footer { margin-top: 4rem; color: var(--gris); font-size: 0.85rem; }
+
+.liens { list-style: none; padding: 0; }
+.liens li { margin: 0.75rem 0; }
+.liens a {
+  display: block;
+  background: var(--blanc);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--encre);
+}
+.liens span { display: block; font-weight: 400; color: var(--gris); font-size: 0.92rem; }

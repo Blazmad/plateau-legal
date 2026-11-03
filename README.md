@@ -15,7 +15,7 @@ de l'app vit dans `Code/Plateau`.
 
 **Adresse de contact à confirmer.** `plateau.app@outlook.com` est provisoire : la boîte n'est pas
 encore créée. Une fois l'adresse confirmée, la remplacer dans `confidentialite/index.html` (deux
-liens `mailto:` et leur texte) et dans `PlateauKit/Sources/PlateauKit/AppInfo.swift`
+liens `mailto:` et leur texte), dans `index.html` (un lien, page d'assistance) et dans `PlateauKit/Sources/PlateauKit/AppInfo.swift`
 (`AppInfo.contactEmail`), qui doivent toujours être identiques.
 
 Ce que dit la politique a été vérifié sur le code de l'app le 3 novembre 2026 : un seul appel
@@ -27,7 +27,7 @@ Toute modification de la politique : changer la date « Dernière mise à jour �
 
 ## Contenu
 
-- `index.html` : page d'accueil, lien vers la politique.
+- `index.html` : page d'accueil (URL d'assistance de la fiche App Store) : lien vers la politique et adresse de contact.
 - `confidentialite/index.html` : politique de confidentialité.
 - `assets/` : feuille de style aux couleurs de la marque (Brume, Encre, Marine, Gris d'atelier ;
   Instrument Sans via Google Fonts), logo horizontal et favicons copiés de

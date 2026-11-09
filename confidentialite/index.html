@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Plateau — Politique de confidentialité</title>
-  <meta name="description" content="Plateau ne collecte aucune donnée : pas de compte, pas de publicité, pas d'outil d'analyse. Seul le code-barres scanné part chez Open Food Facts.">
+  <meta name="description" content="Plateau ne collecte aucune donnée : pas de compte, pas de publicité, pas d'outil d'analyse. Seuls le code-barres scanné et le texte de ta recherche partent chez Open Food Facts.">
   <meta name="theme-color" content="#1F3460">
   <link rel="icon" href="../assets/favicon.ico" sizes="48x48">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
@@ -16,14 +16,15 @@
 <main>
   <a class="logo" href="../"><img src="../assets/plateau-horizontal.svg" alt="Plateau" width="118" height="40"></a>
   <h1>Politique de confidentialité</h1>
-  <p class="meta">Dernière mise à jour : 3 novembre 2026</p>
+  <p class="meta">Dernière mise à jour : 9 novembre 2026</p>
 
   <div class="carte">
     <p><strong>En bref.</strong> Plateau ne collecte aucune donnée. Pas de compte, pas de serveur,
       pas de publicité, pas d'outil d'analyse.</p>
     <p>Tes repas, tes fiches et tes objectifs restent sur ton téléphone. Quand tu scannes un
-      produit que ton téléphone ne connaît pas encore, seul son code-barres part chez
-      Open Food Facts, avec l'adresse IP de ta connexion.</p>
+      produit que ton téléphone ne connaît pas encore, son code-barres part chez Open Food Facts ;
+      quand tu cherches un aliment par son nom, le texte de ta recherche y part aussi. Dans les
+      deux cas, avec l'adresse IP de ta connexion.</p>
   </div>
 
   <h2>1. Qui édite Plateau</h2>
@@ -39,17 +40,21 @@
     <li>tes réglages.</li>
   </ul>
   <p>La table CIQUAL de l'ANSES (Agence nationale de sécurité sanitaire), qui sert à chercher les
-    aliments génériques, est embarquée dans l'app : chercher un aliment par son nom ne passe
-    pas par internet.</p>
+    aliments génériques, est embarquée dans l'app : elle fonctionne sans internet. Pour
+    trouver aussi les produits de marque, la recherche par nom interroge Open Food Facts (voir
+    plus bas).</p>
   <p>Plateau n'envoie rien de tout cela, ni à l'éditeur ni à personne. Il n'y a pas de serveur
     Plateau.</p>
 
   <h2>3. Ce qui part chez Open Food Facts</h2>
-  <p>Quand tu scannes un code-barres que ton téléphone ne connaît pas, Plateau demande sa fiche à
+  <p>Plateau interroge
     <a href="https://world.openfoodfacts.org">Open Food Facts</a>, la base ouverte et collaborative
-    des produits alimentaires, gérée par une association française. La requête contient :</p>
+    des produits alimentaires, gérée par une association française, dans deux cas : quand tu
+    scannes un code-barres que ton téléphone ne connaît pas, et quand tu cherches un aliment par
+    son nom, à partir de 3 lettres, pour trouver les produits de marque. La requête contient :</p>
   <ul>
-    <li><strong>le code-barres scanné</strong>, seul ;</li>
+    <li><strong>le code-barres scanné</strong>, ou <strong>le texte de ta recherche</strong> réduit
+      à ses mots, et rien d'autre de ta saisie ;</li>
     <li><strong>l'adresse IP de ta connexion</strong>, comme pour toute connexion à un site
       internet ;</li>
     <li>le nom et la version de l'app, avec l'adresse de contact de Plateau (pas la tienne), comme
@@ -59,7 +64,8 @@
   </ul>
   <p>Rien d'autre : ni ton nom, ni ton journal, ni tes poids, ni un identifiant de ton téléphone.
     Aucun cookie n'est gardé ni renvoyé d'une demande à l'autre. La fiche reçue est ensuite copiée
-    sur ton iPhone. Rescanner un produit déjà trouvé ne refait pas d'appel, même sans réseau.</p>
+    sur ton iPhone. Rescanner un produit déjà trouvé ne refait pas d'appel, même sans réseau.
+    Les produits trouvés par nom ne sont copiés sur ton iPhone que si tu les ajoutes.</p>
   <p>Un code propre au magasin (produit pesé au rayon, par exemple) n'est jamais envoyé.</p>
   <p>Ce qu'Open Food Facts fait de l'adresse IP relève de sa propre politique de
     confidentialité, publiée sur son site.</p>

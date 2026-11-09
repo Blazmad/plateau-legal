@@ -18,10 +18,11 @@ encore créée. Une fois l'adresse confirmée, la remplacer dans `confidentialit
 liens `mailto:` et leur texte), dans `index.html` (un lien, page d'assistance) et dans `PlateauKit/Sources/PlateauKit/AppInfo.swift`
 (`AppInfo.contactEmail`), qui doivent toujours être identiques.
 
-Ce que dit la politique a été vérifié sur le code de l'app le 3 novembre 2026 : un seul appel
-réseau (`OFFClient`, `https://world.openfoodfacts.org/api/v2/product/<code>.json`, seulement pour un
-code-barres sans fiche locale et hors codes propres au magasin), `PrivacyInfo.xcprivacy` sans
-pistage ni donnée collectée. Toute nouvelle connexion réseau dans l'app impose de revoir cette page.
+Ce que dit la politique a été vérifié sur le code de l'app le 9 novembre 2026 (feature #17) : deux
+appels réseau, `OFFClient` (`https://world.openfoodfacts.org/api/v2/product/<code>.json`, seulement
+pour un code-barres sans fiche locale et hors codes propres au magasin) et `OFFSearchClient`
+(`https://search.openfoodfacts.org/search`, recherche par nom, texte réduit à ses mots, à partir de
+3 caractères), `PrivacyInfo.xcprivacy` sans pistage ni donnée collectée. Toute nouvelle connexion réseau dans l'app impose de revoir cette page.
 
 Toute modification de la politique : changer la date « Dernière mise à jour » en tête de page.
 
